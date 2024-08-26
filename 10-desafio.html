@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script>
+   //serão pedidos dois numeros, se forem iguais mostraro resultado da soma, se for diferente realizar multiplicação
+
+   //coleta de dados
+
+   var valor1 = parseInt(prompt("Digite o valor1: "))
+   
+   var valor2 = parseInt(prompt("Digite o valor2: "))
+
+   var soma= parseInt(valor1 + valor2)
+   var mult= parseInt(valor1 * valor2)
+
+   // condicional
+
+   if(valor1 == valor2){
+    alert("Valores serão somados!")
+    document.write("Resultados dos valores: " + soma)
+   }
+   else{
+    alert("Valores serão Multiplicados!")
+    document.write("Resultados dos valores: "+ mult)
+   }
+
+  </script>
+
+  <body></body>
+</html>
