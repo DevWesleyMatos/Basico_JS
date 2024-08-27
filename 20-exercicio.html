@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+
+  <script>
+
+   //obter nota
+function obternota(){
+   var nota1 = parseInt(document.getElementById("nota1").value)
+   
+   var nota2 = parseInt(document.getElementById("nota2").value)
+
+
+   //realizar calculo media
+
+   var media =calculo(nota1,nota2)
+
+
+   //verificar situação
+
+   var condicao =situacao(media)
+
+   // mensagem
+
+   document.write("sua nota é: " + media +", sua é: " + condicao)
+
+}
+   // calculo media
+
+   function calculo(nota1, nota2){
+
+    return (nota1, nota2)/2
+   }
+
+   //situacao
+
+   function situacao(media){
+
+    //condicional
+
+    return media>= 7 ? "Aprovado" : "reprovado"
+   }
+
+
+  </script>
+
+  <body>
+
+   <!--input den entrada-->
+
+   <input type="text" placeholder="Informe a nota 1 ..." id="nota1">
+   
+   <input type="text" placeholder="Informe a nota 2 ..." id="nota2">
+
+   <!--butão-->
+
+   <button onclick="obternota()"> Calcular</button>
+
+  </body>
+</html>
